@@ -22,22 +22,16 @@
         .banner-track {
             display: flex;
             width: max-content;
-            /* Płynna animacja - dostosuj czas (np. 30s) do prędkości, jaką chcesz uzyskać */
             animation: scrollBanner 240s linear infinite;
         }
         .banner-image {
             height: 110px;
             width: auto;
             display: block;
-            object-fit: contain;
         }
         @keyframes scrollBanner {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
         }
     </style>
 </head>
@@ -45,9 +39,7 @@
 
     <div class="banner-container">
         <div class="banner-track">
-            <!-- Pierwszy zestaw zdjęć -->
             <img src="adi2.png" class="banner-image" alt="Banner Giftów">
-            <!-- Dokładna kopia, wymagana do płynnej pętli animacji -->
             <img src="adi2.png" class="banner-image" alt="Banner Giftów Kopia">
         </div>
     </div>
